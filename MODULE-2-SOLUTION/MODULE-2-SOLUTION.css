@@ -1,0 +1,87 @@
+body{
+color: #121013;
+}
+
+/*STRUCTURE*/
+
+.pagewrap {
+padding: 5px;
+width: 960px;
+margin:20px auto;
+}
+header {
+height: 100px;
+padding: 15px;
+background-color: #a4ebf3;
+}
+.content {
+width: 290px;
+float: left;
+padding: 5px 15px;
+background-color: #f8a1d1;
+}
+.middle {
+width: 294px;
+float: left;
+padding: 5px 15px;
+margin: 0px 5px 5px 5px;
+background-color: #adeecf;
+}
+.sidebar {
+width: 270px;
+padding: 5px 15px;
+float: left;
+background-color: #c1a1d3;
+}
+
+/*992px and above*/
+@media screen and (min-width: 992px) {
+.pagewrap {
+width: 960px;
+}
+.content{
+width: 290px;
+padding: 5px 15px;
+margin: 0px 0px 5px 5px;
+float: center;
+}
+.sidebar {
+padding:  5px 15px;
+width: 270px;
+float: right;
+}
+
+
+/*between 768px and 991px*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+.content{
+width: auto;
+float: none;
+}
+.middle {
+width: auto;
+float: none;
+}
+.sidebar {
+width: auto;
+float: none;
+}
+}
+/*equal to or less than 767px*/
+@media screen and (max-width: 767px) {
+header{
+height: auto;
+}
+h1 {
+font-size: 2em;
+}
+.sidebar {
+display: none;
+}
+
+}
+
+header, .content, .middle, .sidebar {
+margin-bottom: 5px;
+}
+
